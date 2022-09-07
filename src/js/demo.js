@@ -1,0 +1,31 @@
+import '../css/demo.css';
+import '../images/bg.gif';
+import '../images/ikona.gif';
+import '../images/menu-bg.jpg';
+import '../images/menu-sep.jpg';
+import '../images/mid.jpg';
+import '../images/repert.jpg';
+import '../images/stopka.jpg';
+import '../images/targi3.gif';
+import '../images/top1.jpg';
+import '../images/Agnieszka-Polubinska.jpg';
+import '../images/Agnieszka-Zwolska.jpg';
+import '../images/Dorota-Michalska.jpg';
+import '../images/Tomasz-Jablonski.jpg';
+
+
+// demo
+import '../audio-demo/01_demo.mp3';
+import '../audio-demo/02_demo.mp3';
+import '../audio-demo/03_demo.mp3';
+import '../audio-demo/04_demo.mp3';
+import '../audio-demo/05_demo.mp3';
+import '../audio-demo/06_demo.mp3';
+import '../audio-demo/07_demo.mp3';
+import '../audio-demo/08_demo.mp3';
+import '../audio-demo/09_demo.mp3';
+import '../audio-demo/10_demo.mp3';
+import '../audio-demo/11_demo.mp3';
+import '../audio-demo/12_demo.mp3';
+import '../audio-demo/13_demo.mp3';
+import '../audio-demo/14_demo.mp3';

@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-image: url('../images/bg.gif'); /* rgb(245, 243, 243) */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main css */
+/* back-to-top button */
+
+.container {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+   /*  height: 100vh; */
+}
+
+.back {
+    display: none;
+    position: fixed;
+    right: 130px;
+    bottom: 80px;
+    width: 70px;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.4;
+    cursor: pointer;
+    background-color: #980000;
+    color:#fffde8;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 200;
+}
+
+.back:hover {
+    background: #993636;
+}
+
+.intro {
+    width: 100%;
+    background-color: #fff;
+}
+
+.intro-img {
+    display: block;
+    width: 90%;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-nav {
+    background-image: url('../images/menu-bg.jpg');
+    width: 100%;
+    height: 60px;
+}
+
+.menu-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: #c8c5c5;
+}
+
+.intro-image {
+    width: 100%;
+}
+
+.intro-image img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.article {
+    width: 100%;
+    background-color: #fffde8;
+}
+
+.article-image {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0 0;
+}
+
+.footer {
+    background-image: url('../images/stopka.jpg');
+    width: 100%;
+    height: 45px;
+}
+
+.footer-info {
+    text-align: end;
+    color: #aaa;
+    font-size: 14px;
+    padding: 15px;
+}
+
+/* about us */
+.artists {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffde8;
+    padding-bottom: 50px;
+}
+
+.artist {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.artist-image {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.artist-info {
+    padding: 0 40px;
+}
+
+.artist-info p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.artist-headline {
+    font-size: 28px;
+    padding: 30px 0 20px;
+}
+
+/* offer section */
+.offer-and-cooperation-section {
+    width: 100%;
+    background-color: #fffde8;
+}
+
+.offer, .cooperation {
+    padding: 40px;
+}
+
+.offer-headline, .cooperation-headline {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.offer-info {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.recomendation-image {
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 0;
+}
+
+/* repertoire section */
+.repertoire {
+    background-color: #fffde8;
+    padding: 30px 80px 80px;
+}
+
+.repertoire-headline {
+    font-size: 24px;
+    margin: 30px 0 15px;
+  /*   text-align: center; */
+}
+
+.repertoire-list {
+    list-style: disc;
+}
+
+/* demo */
+.demo {
+    width: 100%;
+    background-color: #fffde8;
+    padding-bottom: 40px;
+}
+
+.demo-list {
+    width: 100%;
+    list-style: decimal;
+    list-style-position: inside;
+    padding-left: 60px;
+}
+
+.demo-list li {
+    padding: 15px 0;
+}
+
+.demo-list li a img {
+    display: inline-block;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.demo-list li a {
+    text-decoration: none;
+}
+
+.demo-list li a:hover {
+    text-decoration: underline;
+}
+
+.studio-link {
+    font-size: 22px;
+    padding: 0 0 30px 60px;
+    margin-top: 25px;
+}
+
+.studio-link a {
+    text-decoration: none;
+}
+
+.studio-link a:hover {
+    text-decoration: underline;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fffde8;
+}
+
+.email a {
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+.email, .telephone {
+    font-size: 24px;
+    padding: 7px 0;
+}
+
+/* links section */
+.links {
+    width: 100%;
+    background-color: #fffde8;
+}
+
+.links-headline {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px 0;
+    color: #323280;
+    letter-spacing: 2px;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 30px;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inner-box p {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.inner-box p a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.inner-box p a:hover {
+    text-decoration: underline;
+}

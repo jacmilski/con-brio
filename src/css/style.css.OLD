@@ -1,0 +1,558 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-image: url("../images/bg.gif");
+    background-repeat: repeat;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main css */
+/* back-to-top button */
+
+.container {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x:hidden;
+   /*  height: 100vh; */
+}
+
+.back {
+    display: none;
+    position: fixed;
+    right: 130px;
+    bottom: 80px;
+    width: 70px;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.4;
+    cursor: pointer;
+    background-color: #980000;
+    color:#fffde8;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 200;
+}
+
+.back:hover {
+    background: #993636;
+}
+
+.intro {
+    width: 100%;
+    background-color: #fff;
+}
+
+.intro-img {
+    display: block;
+    width: 90%;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-nav {
+    background-image: url("../images/menu-bg.jpg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 60px;
+}
+
+.menu-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: #c8c5c5;
+}
+
+.intro-image {
+    width: 100%;
+}
+
+.intro-image img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.article-container {
+    width: 100%;
+}
+
+.article {
+    width: 100%;
+    background-color: #fffde8;
+}
+
+.article-image {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0 0;
+}
+
+.footer {
+    background-image: url('../images/stopka.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 45px;
+}
+
+.footer-info {
+    text-align: end;
+    color: #aaa;
+    font-size: 14px;
+    padding: 15px;
+}
+
+/* about us */
+.artists {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffde8;
+    padding-bottom: 50px;
+}
+
+.artist {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.artist-image {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.artist-info {
+    padding: 0 40px;
+}
+
+.artist-info p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.artist-headline {
+    font-size: 28px;
+    padding: 30px 0 20px;
+}
+
+/* offer section */
+.offer-and-cooperation-section {
+    width: 100%;
+    background-color: #fffde8;
+}
+
+.offer, .cooperation {
+    padding: 40px;
+}
+
+.offer-headline, .cooperation-headline {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.offer-info {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.recomendation-image {
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 0;
+}
+
+/* repertoire section */
+.repertoire {
+    background-color: #fffde8;
+    padding: 30px 80px 80px;
+}
+
+.repertoire-headline {
+    font-size: 24px;
+    margin: 30px 0 15px;
+  /*   text-align: center; */
+}
+
+.repertoire-list {
+    list-style: disc;
+}
+
+/* demo */
+.demo {
+    width: 100%;
+    background-color: #fffde8;
+    padding-bottom: 40px;
+}
+
+.demo-list {
+    width: 100%;
+    list-style: decimal;
+    list-style-position: inside;
+    padding-left: 60px;
+}
+
+.demo-list li {
+    padding: 15px 0;
+}
+
+.demo-list li a img {
+    display: inline-block;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.demo-list li a {
+    text-decoration: none;
+}
+
+.demo-list li a:hover {
+    text-decoration: underline;
+}
+
+.studio-link {
+    font-size: 22px;
+    padding: 0 0 30px 60px;
+    margin-top: 25px;
+}
+
+.studio-link a {
+    text-decoration: none;
+}
+
+.studio-link a:hover {
+    text-decoration: underline;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fffde8;
+}
+
+.email a {
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+.email, .telephone {
+    font-size: 24px;
+    padding: 7px 0;
+}
+
+/* links section */
+.links {
+    width: 100%;
+    background-color: #fffde8;
+}
+
+.links-headline {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px 0;
+    color: #323280;
+    letter-spacing: 2px;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 30px;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inner-box p {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.inner-box p a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.inner-box p a:hover {
+    text-decoration: underline;
+}
+
+.introduction-text {
+    float: left;
+}
+
+/* media query */
+@media only screen and (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header-nav {
+        width: 100%;
+        height: 210px;
+        background-image: none;
+        background-image: linear-gradient(to top right, #db0505, #750000);
+    }
+
+    .hr-shadow {
+        border: 1px solid rgb(255, 253, 232);
+        box-shadow: 0px -1px 9px 4px rgba(255, 253, 232, 0.7);
+        margin: 0;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu-item {
+        font-size: 16px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+    }
+
+    .intro-image img {
+        height: 180px;
+    }
+
+    .menu-list img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .intro-img {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    .intro-alt {
+        display: none;
+    }
+
+    .article-image-alt {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1101px) {
+    .hr-shadow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+
+    .artist {
+        display: block;
+    }
+
+    .artist-headline {
+        text-align: center;
+    }
+
+    .artist-image {
+        justify-content: center;
+    }
+
+    .artist-info {
+        padding: 0;
+    }
+
+    .offer, .cooperation {
+        padding: 20px;
+    }
+
+    .repertoire {
+        padding: 30px 40px 80px;
+        font-size: 14px;
+    }
+
+    .links-box {
+        padding: 0 20px 20px;
+    }
+
+    .demo {
+        font-size: 14px;
+    }
+
+    .demo-list {
+        list-style: none;
+        list-style-position: unset;
+        padding-left: 20px;
+    }
+
+    .demo-list li a {
+        padding-right: 10px;
+    }
+
+    .article-image {
+        display: none;
+    }
+
+    .article-image-alt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Estonia', 'Great Vibes', 'Alex Brush', cursive;
+        width: 100%;
+        background-color: #fffde8;
+    }
+
+    .article-image-alt h2 {
+        width: 90%;
+        margin: 20px auto 0;
+        font-size: 28px;
+        line-height: 0.8;
+        font-weight: bold;
+        color: maroon;
+        text-decoration: underline;
+    }
+
+    .introduction {
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: bolder;
+        display: block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        line-height: 0.9;
+    }
+
+    .introduction-image {
+        border: 2px solid #333;
+        margin-right: 15px;
+        float: left;
+        width: 120px;
+        height: 120px;
+        background-image: url('../images/czerwona_roza_nuty.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .intro-alt {
+        display: block;
+        width: 100%;
+        height: 70px;
+        background-color: #fffde8;
+    }
+
+    .intro-alt h1 {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 42px;
+        color: maroon;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-family: 'Estonia', 'Great Vibes', 'Alex Brush', cursive;
+    }
+
+    .intro-img {
+        display: none;
+    }
+
+    .intro-image img {
+        height: 140px;
+    }
+
+    .menu-item {
+        font-size: 12px;
+    }
+
+    .header-nav {
+        height: 160px;
+    }
+
+    .studio-link {
+        font-size: 16px;
+    }
+}

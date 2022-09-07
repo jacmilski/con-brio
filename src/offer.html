@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Estonia&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> --> 
+    <title>ConBrio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-alt">
+            <h1>Zespół Con Brio</h1>
+        </div>
+        <div class="intro">
+            <img class="intro-img" src="./images/top1.jpg" alt="intro">
+        </div>
+        <header class="header">
+            <nav class="header-nav">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="./images/menu-sep.jpg" alt="">
+                        <a href="./index.html">Strona główna</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./about-us.html">O nas</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./offer.html">Oferta</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./repertoire.html">Repertuar</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./demo.html">Demo</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./gallery.html">Galeria</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./contact.html">Kontakt</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                    <li class="menu-item">
+                        <a href="./links.html">Linki</a>
+                        <img src="./images/menu-sep.jpg" alt="">
+                    </li>
+                </ul>
+            </nav>
+            <hr class="hr-shadow">
+            <div class="intro-image">
+                <img src="./images/mid.jpg" alt="">
+            </div>
+        </header>
+ 
+        <section class="offer-and-cooperation-section">
+            <article class="offer">
+                <h3 class="offer-headline">Nasza propozycja programowa...</h3>
+                <p class="offer-info">...jest zawsze odpowiednio dobrana do okoliczności, w których przyjdzie nam dać Słuchaczom odrobinę radości, wprowadzić atmosferę patosu, czy nakłonić do rozmyślań.<br />
+                Potrafimy zaprezentować szeroką gamę utworów, od klasyków poczynając, przez znane hity filmowe idąc, by do współczesnej muzyki rozrywkowej dotrzeć.</p>
+            </article>
+            
+            <article class="cooperation">
+                <h3 class="cooperation-headline">Współpraca...</h3>
+                <p class="cooperation-info">...zawsze jesteśmy otwarci na propozycje i chętnie podejmujemy współpracę z tymi, którzy kochają muzykę. <br />
+                Z przyjemnością uświetnimy każdy ślub, wesele, wernisaż, wystawę, spotkania kameralne, firmowe, integracyjne, imprezy okolicznościowe...</p>
+                <div class="recomendation-image">
+                    <img title="targi ślubne" alt="Strona rekomendowana przez Portal Targ&oacute;w ślubnych" src="./images/targi3.gif" tppabs="http://www.katalog.slubne-targi.pl/targi3.gif" />
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <p class="footer-info">Wykonanie: <a href="https://www.visacom.pl/">VisaCom.pl</a></p>
+            </div>
+        </footer>
+        <button class="back" id="back-btn">Powrót</button>
+    </div>
+
+    <script>
+        const backBtn = document.getElementById('back-btn');
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backBtn.style.display = "block";
+            } else {
+                backBtn.style.display = "none";
+            }
+        }
+
+        const backToTop = function() {
+            window.scrollTo({
+                top: 0,
+                //left: 100,
+                behavior: 'smooth'
+            });
+        };
+        backBtn.addEventListener('click', backToTop);
+    </script>
+</body>
+</html>
